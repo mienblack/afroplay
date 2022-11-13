@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react"
-import config from "../config.json"
-import styled from "styled-components"
 import Menu from "../src/components/Menu"
 import Header from '../src/components/Header'
 import Timeline from '../src/components/Timeline'
-import { StyledTimeline } from "../src/components/Timeline"
 import { videoService } from "../src/services/videoService"
 
 function HomePage() {

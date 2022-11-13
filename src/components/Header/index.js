@@ -27,7 +27,7 @@ export default function Header() {
                 <button onClick={showFavorites}>FAVORITOS</button>
             </section>
             <Favorites show={showFav} onHide={hideFavorites}>
-                {/*config.favorites.map(fav=><li key={fav}>{fav}</li>)*/}
+                {config.favorites.map(fav=><a href={fav.ref} target="_blank"><li key={fav}><img src={fav.image}/>{fav.name}</li></a>)}
             </Favorites>
         </StyledHeader>
     )

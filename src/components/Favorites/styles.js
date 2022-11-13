@@ -7,7 +7,7 @@ export const StyledFavorites = styled.div`
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.85);
 
     display: flex;
     justify-content: center;
@@ -18,13 +18,39 @@ export const StyledFavorites = styled.div`
     position: absolute;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
     top: 0;
     width: 100vw;
-    height: 250px;
-    background-color: blue;
+    height: fit-content;
+    background-color: red;
     padding: 20px;
     list-style-type: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fav li {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.fav img {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 .hide {
