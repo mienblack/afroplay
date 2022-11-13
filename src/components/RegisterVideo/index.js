@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { StyledRegisterVideo } from "./styles";
 import { createClient } from "@supabase/supabase-js"
+import config from "../../../config.json"
 
 function useForm(props) {
     const [values, setValues] = useState(props.initialValue)
@@ -14,25 +15,6 @@ function useForm(props) {
         },
         clearForm: () => {
             setValues({})
-        },
-        submit() {
-            if (values) {
-                this.clearForm
-
-                // Contrato entre o nosso Front e o BackEnd
-                supabase.from("video").insert({
-                    title: values.title,
-                    url: values.url,
-                    thumb: getThumbnail(values.url),
-                    playlist: "games",
-                })
-                    .then((res) => {
-                        console.log(res);
-                    })
-                    .catch((err) => {
-                        console.log(err);
-                    })
-            }
         }
     }
 }
@@ -46,16 +28,33 @@ function getThumbnail(url) {
 }
 
 export default function RegisterVideo(props) {
-    console.log(supabase)
     const [formVisible, setFormVisible] = useState(false)
-    const formRegister = useForm({ initialValue: { title: "", url: "" } })
+    const formRegister = useForm({ initialValue: {} })
     return (
         <StyledRegisterVideo>
             <button className="add-video" onClick={() => setFormVisible(true)}>+</button>
             {formVisible ?
                 (<form onSubmit={(e) => {
                     e.preventDefault()
-                    formRegister.submit()?setFormVisible(false):alert("Não é possível realizar a operação. Digite um valor!")
+                    const size = Object.keys(formRegister.values).length;
+                    if (size == 3) {
+
+                        // Contrato entre o nosso Front e o BackEnd
+                        supabase.from("video").insert({
+                            title: formRegister.values.title,
+                            url: formRegister.values.url,
+                            thumb: getThumbnail(formRegister.values.url),
+                            playlist: formRegister.values.playlist,
+                        })
+                            .then((res) => {
+                                console.log(res);
+                            })
+                            .catch((err) => {
+                                console.log(err);
+                            })
+                        setFormVisible(false)
+                        formRegister.clearForm()
+                    } else { alert("Não é possível realizar a operação. Digite um valor!") }
                 }}>
                     <div>
                         <button type="button" className="close-modal" onClick={() => setFormVisible(false)}>X</button>
@@ -66,7 +65,10 @@ export default function RegisterVideo(props) {
                             value={formRegister.values.url}
                             onChange={formRegister.handleChange}
                         />
-                        <input type="select" />
+                        <select name="playlist" onChange={formRegister.handleChange}>
+                            <option disabled selected value> -- Selecione uma playlist -- </option>
+                            {config.playlists.map(item => <option>{item}</option>)}
+                        </select>
                         <button type="submit">Cadastrar</button>
                     </div>
                 </form>)
