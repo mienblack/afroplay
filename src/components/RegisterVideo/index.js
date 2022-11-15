@@ -32,7 +32,7 @@ export default function RegisterVideo(props) {
     const formRegister = useForm({ initialValue: {} })
     return (
         <StyledRegisterVideo>
-            <button className="add-video" onClick={() => setFormVisible(true)}>+</button>
+            <button className="add-video button-color" onClick={() => setFormVisible(true)}>+</button>
             {formVisible ?
                 (<form onSubmit={(e) => {
                     e.preventDefault()
@@ -69,7 +69,7 @@ export default function RegisterVideo(props) {
                             <option disabled selected value> -- Selecione uma playlist -- </option>
                             {config.playlists.map(item => <option>{item}</option>)}
                         </select>
-                        <button type="submit">Cadastrar</button>
+                        <button type="submit" className="button-color">Cadastrar</button>
                     </div>
                 </form>)
                 : false}

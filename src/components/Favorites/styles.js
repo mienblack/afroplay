@@ -8,7 +8,6 @@ export const StyledFavorites = styled.div`
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.85);
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +23,7 @@ export const StyledFavorites = styled.div`
     top: 0;
     width: 100vw;
     height: fit-content;
-    background-color: red;
+    background-color: ${({ theme }) => theme.backgroundLevel2};
     padding: 20px;
     list-style-type: none;
     color: black;
