@@ -7,17 +7,17 @@ import Head from 'next/head'
 
 const theme = {
     light: {
-        backgroundBase: "#f9f9f9",
-        backgroundLevel1: "#ffffff",
-        backgroundLevel2: "#f0f0f0",
-        borderBase: "#e5e5e5",
+        backgroundBase: "#CCDED0",
+        backgroundLevel1: "#EDF2EE",
+        backgroundLevel2: "#A1C6A9",
+        borderBase: "#FFFFFF",
         textColorBase: "#222222",
     },
     dark: {
-        backgroundBase: "#181818",
-        backgroundLevel1: "#202020",
-        backgroundLevel2: "#313131",
-        borderBase: "#383838",
+        backgroundBase: "#000602",
+        backgroundLevel1: "#05230D",
+        backgroundLevel2: "#103B1B",
+        borderBase: "#000000",
         textColorBase: "#FFFFFF",
     }
 }

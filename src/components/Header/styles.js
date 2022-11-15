@@ -3,7 +3,7 @@ import config from '../../../config.json'
 
 export const StyledHeader = styled.div`
 
-background-color: ${({ theme }) => theme.backgroundLevel1};
+background-color: ${({ theme }) => theme.backgroundLevel2};
 
 img {
     width: 70px;

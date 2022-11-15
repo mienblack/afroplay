@@ -1,7 +1,7 @@
 <h1 align="center">aluratube</h1>
 
 <p align="center">Seus vídeos</p><br>
-<h3 align="center"><a href="https://aluratube-mien.vercel.app/" target="_blank"><strong>[ USE AGORA ]</strong></a></h3>
+<h3 align="center"><a href="https://afroplay.vercel.app/" target="_blank"><strong>[ USE AGORA ]</strong></a></h3>
 
 ---
 

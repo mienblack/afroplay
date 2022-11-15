@@ -1,0 +1,14 @@
+light: {
+        backgroundBase: "#CBDBCF",
+        backgroundLevel1: "#C6D7CB",
+        backgroundLevel2: "#A2C3AB",
+        borderBase: "#336E43",
+        textColorBase: "#222222",
+    },
+    dark: {
+        backgroundBase: "#001205",
+        backgroundLevel1: "#04240C",
+        backgroundLevel2: "#05230D",
+        borderBase: "#103B1B",
+        textColorBase: "#FFFFFF",
+    }
