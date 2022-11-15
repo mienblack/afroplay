@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <ThemeProvider theme={theme[context.mode]}>
             <Head>
-                <title>aluratube</title>
+                <title>AfroPlay</title>
             </Head>
             <CSSReset />
             <Component {...pageProps} />

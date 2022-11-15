@@ -3,8 +3,10 @@ import Menu from "../src/components/Menu"
 import Header from '../src/components/Header'
 import Timeline from '../src/components/Timeline'
 import { videoService } from "../src/services/videoService"
+import Footer from "../src/components/Footer"
 
-function HomePage() {
+
+function HomePage(props) {
     const service = videoService()
     const [searchValue, setSearchValue] = useState("")
     const [playlists, setPlaylists] = useState({})
@@ -34,9 +36,10 @@ function HomePage() {
                 flexDirection: "column",
                 flex: 1,
             }}>
-                <Menu searchValue={searchValue} setSearchValue={setSearchValue} />
+                <Menu theme={props.theme} searchValue={searchValue} setSearchValue={setSearchValue} />
                 <Header />
                 <Timeline searchValue={searchValue} playlists={playlists} />
+                <Footer/>
             </div>
         </>
     )
