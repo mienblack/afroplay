@@ -1,6 +1,7 @@
-<h1 align="center">aluratube</h1>
+<img alt="afroplay" title="afroplay" src="./public/assets/images/logoAndName_light.png" height="200px"/>
+<h1 align="center">AfroPlay</h1>
 
-<p align="center">Seus vídeos</p><br>
+<p align="center">O AfroWatch é um clone do Youtube que foi desenvolvido durante a Imersão React 5 da Alura.</p><br>
 <h3 align="center"><a href="https://afroplay.vercel.app/" target="_blank"><strong>[ USE AGORA ]</strong></a></h3>
 
 ---
@@ -9,15 +10,14 @@
 
 
 <div align="center">
-  <img alt="" title="" src="" height="400px"/>
-  <img alt="" title="" src="" height="400px"/>
-  <img alt="" title="" src="" height="400px"/>
-
+  <img alt="afroplay home" title="afroplay home" src="./public/assets/images/afroplay_home.gif" height="400px"/>
+  <img alt="afroplay video" title="afroplay video" src="./public/assets/images/afroplay_video.png" height="400px"/>
 </div>
 
 ## 💻 Projeto
 
-O aluratube 
+Este projeto foi desenvolvido em React e nele você pode guardar videos do youtube, assisti-los e organiza-los em playlists.  
+
 
 ## 🚀 Tecnologias
 
