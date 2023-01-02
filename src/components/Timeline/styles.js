@@ -2,9 +2,12 @@ import styled from "styled-components";
 
 export const StyledTimeline = styled.div`
   flex: 1;
-  width: 100%;
+  width: 100vw;
   padding: 16px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
   h2 {
     font-size: 16px;
     margin-bottom: 16px;
@@ -20,27 +23,27 @@ export const StyledTimeline = styled.div`
   }
   section {
     width: 100%;
-    padding: 0;
-    overflow: hidden;
-    padding: 16px;
-    div {
-      
-      width: calc(100vw - 16px * 4);
-      display: grid;
-      grid-gap: 16px;
-      grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
-      grid-auto-flow: column;
-      grid-auto-columns: minmax(200px,1fr);
-      overflow-x: scroll;
-      scroll-snap-type: x mandatory;
+    padding: 32px 16px;
+    .timelineVideos {
+      margin: auto;
+      width: calc(100% - 16px * 5);
+      div{
+
+      }
       a {
         scroll-snap-align: start;
         span {
           padding-top: 8px;
+          max-height: 45px;
+          max-width: 88%;
+          overflow-y: hidden;
           display: block;
           padding-right: 24px;
           color: ${({ theme }) => theme.textColorBase || "#222222"};
         }
+      }
+      .slick-prev:before, .slick-next:before{
+        color: ${({ theme }) => theme.textColorBase || "#222222"};
       }
     }
   }

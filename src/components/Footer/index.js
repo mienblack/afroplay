@@ -1,15 +1,32 @@
 import { StyledFooter } from "./styles";
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import Link from 'next/link'
+
 
 export default function Footer() {
     return (
         <StyledFooter>
-            <section>
-                <div className="div-footer">
+            <footer className="footer">
+
+                <ul className="socialList">
+                    <li>
+                        <Link href="https://www.linkedin.com/in/damien-costa/" target="_blank">
+                            <FaLinkedin />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="https://github.com/mienblack" target="_blank">
+                            <FaGithub />
+                        </Link>
+                    </li>
+                </ul>
+                <div className="ref">
                     <p>Made with 💟 by Damien Costa ✌🏿</p>
-                    <a href="https://github.com/mienblack" target="_blank"><img src="/assets/images/github-icon.png"  alt="github" /></a>
-                    <a href="https://www.linkedin.com/in/damien-costa/" target="_blank"><img src="/assets/images/linkedin-icon.png" alt="linkedin" /></a>
+                    <p>
+                        <span className="refSpan">AFROPLAY</span> &copy; 2022
+                    </p>
                 </div>
-            </section>
+            </footer>
         </StyledFooter>
     )
 }

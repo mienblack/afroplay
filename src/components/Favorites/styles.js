@@ -11,9 +11,11 @@ export const StyledFavorites = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999;
 }
 
 .fav {
+z-index:999;
     position: absolute;
     display: flex;
     justify-content: flex-start;

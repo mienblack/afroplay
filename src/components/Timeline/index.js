@@ -1,8 +1,17 @@
 import { StyledTimeline } from './styles'
 import Link from 'next/link'
+import Slider from "react-slick";
 
 export default function Timeline({ searchValue, ...props }) {
     const playlistNames = Object.keys(props.playlists)
+
+    const settings = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 6,
+        slidesToScroll: 3
+    };
 
     return (
         <StyledTimeline>
@@ -10,8 +19,10 @@ export default function Timeline({ searchValue, ...props }) {
                 const videos = props.playlists[playlistName]
                 return (
                     <section>
+
                         <h2>{playlistName}</h2>
-                        <div>
+
+                        <Slider {...settings} className='timelineVideos'>
                             {videos.filter((video) => {
                                 const titleNormalized = video.title.toLowerCase()
                                 const searchValueNormalized = searchValue.toLowerCase()
@@ -41,8 +52,9 @@ export default function Timeline({ searchValue, ...props }) {
                                     </Link>
                                 )
                             })}
-                        </div>
+                        </Slider>
                     </section>
+
                 )
             })}
         </StyledTimeline>

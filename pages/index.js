@@ -39,7 +39,7 @@ function HomePage(props) {
                 <Menu theme={props.theme} searchValue={searchValue} setSearchValue={setSearchValue} />
                 <Header />
                 <Timeline searchValue={searchValue} playlists={playlists} />
-                <Footer/>
+                <Footer />
             </div>
         </>
     )

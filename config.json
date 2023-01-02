@@ -1,45 +1,39 @@
 {
-    "name": "Damien Felipe",
-    "job": "Desenvolvedor Front-end",
-    "github": "mienblack",
-    "bg": "https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1255&q=80",
-    "playlists": [
-        "front-end",
-        "back-end",
-        "podcasts",
-        "cortes",
-        "ciências"
-    ],
-    "favorites": [
-        {
-            "name": "Mario Souto - Dev Soutinho",
-            "image": "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s176-c-k-c0x00ffffff-no-rj",
-            "ref": "https://www.youtube.com/c/DevSoutinho"
-        },
-        {
-            "name": "Alura Cursos Online",
-            "image": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s176-c-k-c0x00ffffff-no-rj",
-            "ref": "https://www.youtube.com/c/Alura"
-        },
-        {
-            "name": "Jovem Nerd",
-            "image": "https://yt3.ggpht.com/ytc/AMLnZu9pDOp93R9V0cp_CodoiMk8FM60-46FkdDasQ1i=s176-c-k-c0x00ffffff-no-rj",
-            "ref": "https://www.youtube.com/c/JovemNerd"
-        },
-        {
-            "name": "luideverso",
-            "image": "https://yt3.ggpht.com/ytc/AMLnZu-2Nyc3shqcC0AMaUBHSQMGA2blrzT4JgN_xlpD=s176-c-k-c0x00ffffff-no-rj",
-            "ref": "https://www.youtube.com/c/luideverso"
-        },
-        {
-            "name": "Rafaella Ballerini",
-            "image": "https://yt3.ggpht.com/84ALFuw4UCyfL1TyoMU77D-I6xngPjn2X0kbx2bMAyoFzWwR-utcrbDn_MuNJcroPcmU9NdGGQ=s176-c-k-c0x00ffffff-no-rj",
-            "ref": "https://www.youtube.com/c/rafaellaballerini"
-        },
-        {
-            "name": "Código Fonte TV",
-            "image": "https://yt3.ggpht.com/ytc/AMLnZu8lUVeJ1TiYevFOzZPNQFEQSDHc-TwiYKMcQpxpvA=s176-c-k-c0x00ffffff-no-rj",
-            "ref": "https://www.youtube.com/@codigofontetv"
-        }
-    ]
+  "name": "Damien Felipe",
+  "job": "Desenvolvedor Front-end",
+  "github": "mienblack",
+  "bg": "https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1255&q=80",
+  "playlists": ["front-end", "back-end", "podcasts", "cortes", "ciências"],
+  "favorites": [
+    {
+      "name": "Mario Souto - Dev Soutinho",
+      "image": "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s176-c-k-c0x00ffffff-no-rj",
+      "ref": "https://www.youtube.com/c/DevSoutinho"
+    },
+    {
+      "name": "Alura Cursos Online",
+      "image": "https://yt3.ggpht.com/Fqr4oo0VR4l5KB2E7frxX00reaPw3oBX5csxGmijKx5UTDPY4xLPW0eYTnzh5TvkqNV35g-HHQ=s176-c-k-c0x00ffffff-no-rj",
+      "ref": "https://www.youtube.com/c/Alura"
+    },
+    {
+      "name": "Jovem Nerd",
+      "image": "https://yt3.ggpht.com/ytc/AMLnZu9pDOp93R9V0cp_CodoiMk8FM60-46FkdDasQ1i=s176-c-k-c0x00ffffff-no-rj",
+      "ref": "https://www.youtube.com/c/JovemNerd"
+    },
+    {
+      "name": "luideverso",
+      "image": "https://yt3.ggpht.com/ytc/AMLnZu-2Nyc3shqcC0AMaUBHSQMGA2blrzT4JgN_xlpD=s176-c-k-c0x00ffffff-no-rj",
+      "ref": "https://www.youtube.com/c/luideverso"
+    },
+    {
+      "name": "Rafaella Ballerini",
+      "image": "https://yt3.ggpht.com/84ALFuw4UCyfL1TyoMU77D-I6xngPjn2X0kbx2bMAyoFzWwR-utcrbDn_MuNJcroPcmU9NdGGQ=s176-c-k-c0x00ffffff-no-rj",
+      "ref": "https://www.youtube.com/c/rafaellaballerini"
+    },
+    {
+      "name": "Código Fonte TV",
+      "image": "https://yt3.ggpht.com/ytc/AMLnZu8lUVeJ1TiYevFOzZPNQFEQSDHc-TwiYKMcQpxpvA=s176-c-k-c0x00ffffff-no-rj",
+      "ref": "https://www.youtube.com/@codigofontetv"
+    }
+  ]
 }
