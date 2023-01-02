@@ -8,7 +8,6 @@
 
 <br>
 
-
 <div align="center">
   <img alt="afroplay home" title="afroplay home" src="./public/assets/images/afroplay_home.gif" height="400px"/>
   <img alt="afroplay video" title="afroplay video" src="./public/assets/images/afroplay_video.png" height="400px"/>
@@ -16,13 +15,13 @@
 
 ## 💻 Projeto
 
-Este projeto foi desenvolvido em React e nele você pode guardar videos do youtube, assisti-los e organiza-los em playlists.  
-
+Este projeto foi desenvolvido em React e nele você pode guardar videos do youtube, assisti-los e organiza-los em playlists.
 
 ## 🚀 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
+- [NextJs]
 - [ReactJs]
 - [Javascript]
 - [HTML]
