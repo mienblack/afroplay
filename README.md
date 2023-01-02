@@ -1,4 +1,4 @@
-<img alt="afroplay" title="afroplay" src="./public/assets/images/logoAndName_light.png" height="200px"/>
+<img alt="afroplay" title="afroplay" src="./public/assets/images/logo.png" height="200px"/>
 <h1 align="center">AfroPlay</h1>
 
 <p align="center">O AfroWatch é um clone do Youtube que foi desenvolvido durante a Imersão React 5 da Alura.</p><br>
